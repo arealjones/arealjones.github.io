@@ -1,4 +1,58 @@
-.interests-imgs {
-    width: 100%;
+.horizontal-img {
     height: auto;
+    width: 500px;
+}
+
+.vertical-img {
+    height: 400px;
+    width: auto;
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #123C69;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sm-padding {
+    padding-top: 22%;
+}
+
+.md-padding {
+    padding-top: 25%;
+}
+
+.lg-padding {
+    padding-top: 50%;
+}
+
+.xl-padding {
+    padding-top: 55%;
+}
+
+@media (max-width:1319px) {
+    .horizontal-img, .vertical-img {
+        margin-bottom: 20px;
+    }
 }

@@ -3,3 +3,22 @@
     background-color: #BAB2B5;
     border-radius: 70px;
 }
+
+.contact-icon {
+    font-size: 160px;
+}
+
+@media (max-width:1069px) {
+    .contact-icon {
+        font-size: 100px;
+    }
+    .custom-contact-grey {
+        height: 130px;
+    }
+}
+
+@media (max-width:768px) {
+    .custom-contact-grey {
+        margin-bottom: 20px;
+    }
+}
