@@ -1,27 +1,14 @@
-.custom-project-rose {
-    height: 500px;
-    width: 400px;
-    background-color: #C28285;
-    border-radius: 8px;
-}
-
 .project-icon {
-    color: #123C69;
+    color: var(--main-custom-blue);
+    font-size: 130px;
 }
 
 .project-info {
     margin: 10px;
 }
 
-@media (max-width:1647px) {
-    .custom-project-rose {
-        height: 600px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width:1254px) {
-    .custom-project-rose {
-        height: 700px;
+@media (max-width:767px) {
+    .project-icon {
+        font-size: 90px;
     }
 }

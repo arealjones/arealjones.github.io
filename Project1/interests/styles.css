@@ -1,11 +1,16 @@
 .horizontal-img {
-    height: auto;
+    height: 400px;
     width: 500px;
 }
 
 .vertical-img {
     height: 400px;
     width: auto;
+}
+
+.custom-horizontal-img {
+    height: 280px;
+    width: 500px;
 }
 
 .img-container {
@@ -54,5 +59,16 @@
 @media (max-width:1319px) {
     .horizontal-img, .vertical-img {
         margin-bottom: 20px;
+    }
+    .custom-horizontal-img {
+        height: 200px;
+        width: 400px;
+    }
+    .vertical-img {
+        height: 300px;
+    }
+    .horizontal-img {
+        width: 400px;
+        height: 250px;
     }
 }

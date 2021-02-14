@@ -1,10 +1,6 @@
-p {
-    color: black;
-}
-
-.home-about-img {
-    width: 90%;
-    height: auto;
+#about-img {
+    width: 400px;
+    height: 270px;
     margin-bottom: 10px;
 }
 
@@ -13,22 +9,35 @@ p {
 }
 
 .skill-icon:first-child {
-    color: #123C69;
+    color: var(--main-custom-blue);
 }
 
 .skill-icon:nth-child(2) {
-    color: #C28285;
+    color: var(--main-custom-rose);
 }
 
 .skill-icon:nth-child(3) {
-    color: #123C69;
+    color: var(--main-custom-blue);
 }
 
 .skill-icon:nth-child(4) {
-    color: #C28285;
+    color: var(--main-custom-rose);
 }
 
-.medium-icon {
+.home-icon {
     font-size: 100px;
     padding-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .home-icon {
+        font-size: 70px;
+    }
+}
+
+@media (max-width:595px) {
+    #about-img {
+        width: 300px;
+        height: 200px;
+    }
 }

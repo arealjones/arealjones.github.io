@@ -1,32 +1,27 @@
-/* :root {
-    --main-bg-color:  ;
-} */
-
-.custom-rose {
-    color: #C28285;
+ /* Main colors I am Using */
+ 
+ :root {
+    --main-custom-rose:  #C28285;
+    --main-custom-white: #EEE2DC;
+    --main-custom-grey: #BAB2B5;
+    --main-custom-blue: #123C69;
+    --main-custom-maroon: #AC3B61;
 }
 
-.custom-white {
-    color: #EEE2DC;
+p, li, h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
 }
 
-.custom-grey {
-    color: #BAB2B5;
-}
-
-.custom-blue {
-    color: #123C69;
-}
-
-.custom-maroon {
-    color: #AC3B61;
+p {
+    font-size: large;
 }
 
 /* Menu */
 
 .custom-menu {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #AC3B61;
+    background-color: var(--main-custom-maroon);
     top: 0;
     left: 0;
     right: 0;
@@ -72,11 +67,11 @@
 
 .nav-item a.active {
     text-decoration: underline;
-    color: #BAB2B5 !important;
+    color: var(--main-custom-grey) !important;
 }
 
 .nav-item i.active {
-    color: #BAB2B5 !important;
+    color: var(--main-custom-grey) !important;
 }
 
 .nav-icon {
@@ -88,6 +83,38 @@
     margin: 10px;
 }
 
+/* MISC */
+.paragraph-padding {
+    padding: 40px;
+}
+
+.white-text {
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grey-background {
+    border: 5px solid var(--main-custom-grey);
+    background-color: var(--main-custom-grey);
+}
+
+.white-container {
+    border-radius: 8px;
+    background-color: var(--main-custom-white);
+    margin-bottom: 5px;
+}
+
+.rose-container {
+    border-radius: 8px;
+    background-color: var(--main-custom-rose);
+    margin-top: 10px;
+}
+
 @media (max-width:767px) {
     .nav-icon {
         display:list-item;
@@ -97,46 +124,13 @@
     }
 }
 
+@media (max-width:595px) {
+    p {
+        font-size: medium;
+    }
 
-
-/*  Will delete  */ 
-
-.custom-blue-border {
-    border: 5px solid #123C69;
-}
-
-.custom-grey-border {
-    border: 5px solid #BAB2B5;
-    background-color: #BAB2B5;
-}
-
-.custom-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.home-paragraph {
-    padding: 40px;
-    color: black;
-}
-
-.custom-white-border {
-    border-radius: 8px;
-    background-color: #EEE2DC;
-    margin-bottom: 5px;
-}
-
-.custom-rose-border {
-    border-radius: 8px;
-    background-color: #C28285;
-    margin-top: 10px;
-}
-
-.white-text {
-    color: white;
-}
-
-.large-icon {
-    font-size: 160px;
+    .white-text {
+        font-size: medium;
+    }
+    
 }
